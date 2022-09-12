@@ -1,9 +1,9 @@
 function createStore() {
-  let Store = [];
-  return function (dress) {
-    Store.push(dress);
-    console.log(Store);
-    return Store;
+  let store = [];
+  return function (article) {
+    store.push(article);
+    console.log(store);
+    return store;
   }
 
 }
