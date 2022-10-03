@@ -1,5 +1,5 @@
 function uncompletedNotes(notes) {
-  return notes.map(note => note.todos.filter(todo => todo.done== false));
+  return notes.filter(note => note.todos.some(todo => todo.done== false));
 
 }
 
