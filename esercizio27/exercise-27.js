@@ -1,15 +1,7 @@
 const person = {
   firstName: 'John',
-  lastName: 'Doe',
-  address: {
-    city: 'Roma'
-  },
-  fullName() {
-    return `${this.firstName} ${this.lastName}`
-  }
+  lastName: 'Doe'
 };
 
-
-
-console.log(person.address.city); 
-console.log(person.fullName()); 
+console.log(person.address?.city); 
+console.log(person?.fullName?.()); 
