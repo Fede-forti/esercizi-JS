@@ -36,4 +36,5 @@ function fetchPersonById(id) {
 fetchPersonById(5)
 .then((person) => {
   console.log(JSON.parse(person));
-});
+})
+.catch((e) => console.log(e))
