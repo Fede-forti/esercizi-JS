@@ -40,8 +40,11 @@ function fetchPersonById(id) {
 
 
 async function matchPerson(id){
+  try{
   const person = await fetchPersonById(id);
-  console.log(JSON.parse(person));
+  console.log(JSON.parse(person));}
+  catch (e) {
+    console.log(e)} 
 }
 
 matchPerson(2);
