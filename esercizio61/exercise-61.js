@@ -65,5 +65,5 @@ function fetchJobById(id) {
 Promise.race([fetchPersonById(1), fetchJobById(1)])
 .then((value) => {
   console.log(value)
-}
-)
+})
+.catch((e) => console.log(e))
