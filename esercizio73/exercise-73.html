@@ -1,0 +1,53 @@
+<html>
+
+<body>
+  <div id="container">
+    <h2>Person's List</h2>
+    <table id="person-table">
+      <tbody>
+      </tbody>
+    </table>
+    <button id="add-row" onclick="addRow()">Add row</button>
+  </div>
+</body>
+
+</html>
+
+<script>
+
+const addRow = () => {
+  
+    const newRow = document.createElement('tr');
+    
+    const newTd1 = document.createElement('td');
+    const td1Input = document.createElement('input');
+    td1Input.setAttribute("type","text");
+    td1Input.setAttribute("placeholder","FirstName")
+    newTd1.appendChild(td1Input)
+    
+    const newTd2 = document.createElement('td');
+    const td2Input = document.createElement('input');
+    td2Input.setAttribute("type","text");
+    td2Input.setAttribute("placeholder","Lastname")
+    newTd2.appendChild(td2Input)
+    
+    const newTd3 = document.createElement('td');
+    const td3Input = document.createElement('input');
+    td3Input.setAttribute("type","number");
+    td3Input.setAttribute("placeholder","Age")
+    newTd3.appendChild(td3Input)
+    
+    const newTableBody = document.querySelector('tbody');
+
+
+
+
+    
+    newTableBody.appendChild(newRow);
+    newRow.appendChild(newTd1);
+    newRow.appendChild(newTd2);
+    newRow.appendChild(newTd3);
+  }
+
+
+</script>
